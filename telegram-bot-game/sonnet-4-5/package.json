@@ -1,0 +1,18 @@
+{
+  "name": "sonnet-4-5",
+  "version": "1.0.0",
+  "description": "A Telegram bot that plays a number-guessing game",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}

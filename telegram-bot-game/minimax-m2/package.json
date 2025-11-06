@@ -1,0 +1,15 @@
+{
+  "name": "telegram-number-guess-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot that plays a number-guessing game",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": ["telegram", "bot", "game"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.15.0"
+  }
+}
