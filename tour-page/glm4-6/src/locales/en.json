@@ -1,0 +1,211 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "back": "Back",
+    "continue": "Continue",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "minutes": "minutes",
+    "hours": "hours",
+    "rubles": "RUB",
+    "day": "day",
+    "days": "days",
+    "budget": "Budget",
+    "price": "Price",
+    "duration": "Duration",
+    "distance": "Distance",
+    "accessibility": "Accessibility",
+    "transport": "Transport",
+    "contact": "Contact",
+    "information": "Information",
+    "recommendations": "Recommendations",
+    "notes": "Notes"
+  },
+  "navigation": {
+    "home": "Home",
+    "planner": "Planner",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Tour Planner 55+",
+    "subtitle": "Comfortable travel in Leningrad Oblast",
+    "languageSwitch": "Русский"
+  },
+  "hero": {
+    "title": "Plan Comfortable Journeys",
+    "subtitle": "Specially designed for travelers 55+. Accessible routes with all your needs considered.",
+    "startPlanning": "Start Planning",
+    "features": {
+      "accessibility": {
+        "title": "Full Accessibility",
+        "description": "Routes with minimal stairs and ramps"
+      },
+      "comfort": {
+        "title": "Maximum Comfort",
+        "description": "Comfortable transport and resting places"
+      },
+      "budget": {
+        "title": "Clear Budget",
+        "description": "Transparent calculation of all expenses"
+      }
+    }
+  },
+  "preferences": {
+    "title": "Customize Your Perfect Tour",
+    "subtitle": "Tell us about your preferences to create a personalized route",
+    "days": {
+      "label": "Tour Duration",
+      "one": "1 day",
+      "two": "2 days",
+      "three": "3 days"
+    },
+    "budget": {
+      "label": "Budget per person",
+      "low": "Economy (up to 3000 ₽)",
+      "medium": "Comfortable (3000-8000 ₽)",
+      "high": "Premium (from 8000 ₽)"
+    },
+    "mobility": {
+      "label": "Mobility",
+      "good": "Good mobility",
+      "limited": "Limited mobility",
+      "wheelchair": "Wheelchair user"
+    },
+    "interests": {
+      "label": "Interests",
+      "museums": "Museums",
+      "palaces": "Palaces",
+      "parks": "Parks",
+      "churches": "Churches",
+      "nature": "Nature",
+      "theater": "Theater",
+      "gallery": "Gallery"
+    },
+    "transport": {
+      "label": "Preferred Transport",
+      "walking": "Walking",
+      "public": "Public transport",
+      "taxi": "Taxi",
+      "mixed": "Mixed"
+    },
+    "groupSize": {
+      "label": "Group size"
+    },
+    "age": {
+      "label": "Age"
+    },
+    "weather": {
+      "label": "Consider weather conditions"
+    },
+    "submit": "Create Route"
+  },
+  "itinerary": {
+    "title": "Your Personalized Route",
+    "day": "Day {{number}}",
+    "totalBudget": "Total Budget",
+    "accessibilityScore": "Accessibility Score",
+    "comfortLevel": "Comfort Level",
+    "weatherBackup": "Rainy Day Backup",
+    "emergencyContacts": "Emergency Contacts",
+    "download": "Download Route",
+    "share": "Share Route",
+    "edit": "Edit Route",
+    "newPlan": "Create New Route"
+  },
+  "attraction": {
+    "visitDuration": "Visit Duration",
+    "ticketPrice": "Ticket",
+    "guidePrice": "Guide",
+    "openingHours": "Opening Hours",
+    "bestTime": "Best Time to Visit",
+    "crowdLevel": "Crowd Level",
+    "accessibility": {
+      "wheelchairAccess": "Wheelchair accessible",
+      "hasElevator": "Elevator",
+      "minimalStairs": "Minimal stairs",
+      "hasRamp": "Ramp",
+      "accessibleRestrooms": "Accessible restrooms",
+      "seatingAvailable": "Seating available",
+      "parkingNearby": "Parking nearby",
+      "lightingGood": "Good lighting",
+      "handrailsAvailable": "Handrails",
+      "flatTerrain": "Flat terrain"
+    },
+    "facilities": {
+      "photoAllowed": "Photo allowed",
+      "hasGiftShop": "Gift shop",
+      "hasCafe": "Cafe"
+    }
+  },
+  "accessibility": {
+    "good": "Good accessibility",
+    "medium": "Moderate accessibility",
+    "limited": "Limited accessibility",
+    "high": "High comfort",
+    "mediumComfort": "Medium comfort",
+    "lowComfort": "Low comfort"
+  },
+  "categories": {
+    "museum": "Museum",
+    "palace": "Palace",
+    "park": "Park",
+    "church": "Church",
+    "monument": "Monument",
+    "nature": "Nature",
+    "theater": "Theater",
+    "gallery": "Gallery"
+  },
+  "crowdLevel": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "transport": {
+    "walking": "Walking",
+    "public": "Public transport",
+    "taxi": "Taxi",
+    "time": "Time: {{time}} min",
+    "cost": "Cost: {{cost}} ₽",
+    "transfers": "Transfers: {{count}}",
+    "distance": "Distance: {{distance}} m",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    }
+  },
+  "emergency": {
+    "police": "Police: 102",
+    "medical": "Ambulance: 103",
+    "tourist": "Tourist assistance: 8-800-550-55-05"
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again.",
+    "network": "Connection problems. Check your internet.",
+    "validation": "Please fill in all required fields.",
+    "noResults": "Unfortunately, no suitable routes were found. Try changing the parameters."
+  },
+  "about": {
+    "title": "About Tour Planner 55+",
+    "description": "Specialized service for creating comfortable tourist routes in Leningrad Oblast for travelers over 55 years old.",
+    "features": [
+      "Personalized routes considering mobility",
+      "Detailed accessibility information for each location",
+      "Transparent budget calculation including all expenses",
+      "Alternative plans for bad weather",
+      "Transport recommendations with minimal transfers"
+    ]
+  }
+}

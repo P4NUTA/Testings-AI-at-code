@@ -1,0 +1,159 @@
+.result {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.overview {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.day {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.day:last-child {
+  border-bottom: none;
+}
+
+.dayTitle {
+  font-size: 1.5rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.activity {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border-left: 4px solid #667eea;
+}
+
+.time {
+  font-weight: 700;
+  color: #667eea;
+  min-width: 60px;
+}
+
+.activityContent {
+  flex: 1;
+}
+
+.activityTitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.activityDesc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.activityMeta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.daySummary {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background: #667eea;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.rainy {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff3cd;
+  border-radius: 4px;
+  border-left: 4px solid #ffc107;
+}
+
+.rainyTitle {
+  font-size: 1rem;
+  color: #856404;
+  margin-bottom: 0.5rem;
+}
+
+.rainyItem {
+  font-size: 0.95rem;
+  color: #856404;
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .result {
+    padding: 1.5rem;
+  }
+
+  .overview {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .activity {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .daySummary {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

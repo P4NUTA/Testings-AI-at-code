@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-senior-bg text-senior-text font-sans antialiased;
+    font-feature-settings: "kern", "liga";
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 text-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-primary-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-xl transition-colors duration-200 text-lg border border-gray-300 hover:border-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-300;
+  }
+
+  .btn-senior {
+    @apply min-h-[48px] min-w-[48px] flex items-center justify-center text-lg font-semibold;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100;
+  }
+
+  .input-senior {
+    @apply w-full px-4 py-3 text-lg border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-primary-300 focus:border-primary-500 transition-colors duration-200;
+  }
+
+  .comfort-indicator {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800;
+  }
+
+  .accessibility-good {
+    @apply bg-green-100 text-green-800 border-green-200;
+  }
+
+  .accessibility-medium {
+    @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+  }
+
+  .accessibility-limited {
+    @apply bg-red-100 text-red-800 border-red-200;
+  }
+}
+
+/* Accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    @apply bg-black text-white border-2 border-white;
+  }
+
+  .card {
+    @apply border-2 border-gray-800;
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "peterhof",
+    "name": { "ru": "Петергоф", "en": "Peterhof" },
+    "description": {
+      "ru": "Знаменитый дворцово-парковый ансамбль с фонтанами",
+      "en": "Famous palace and park ensemble with fountains"
+    },
+    "location": "Peterhof",
+    "coordinates": { "lat": 59.8857, "lng": 29.9087 },
+    "accessibilityScore": 7,
+    "duration": 180,
+    "cost": 1000,
+    "weatherDependent": true,
+    "category": "historical",
+    "openingHours": "10:00-18:00",
+    "stairCount": 30,
+    "hasElevator": true
+  },
+  {
+    "id": "hermitage-shuvalovo",
+    "name": { "ru": "Музей-усадьба 'Приютино'", "en": "Priyutino Estate Museum" },
+    "description": {
+      "ru": "Литературный музей XIX века",
+      "en": "19th century literary museum"
+    },
+    "location": "Vsevolozhsk",
+    "coordinates": { "lat": 60.0297, "lng": 30.3866 },
+    "accessibilityScore": 8,
+    "duration": 120,
+    "cost": 300,
+    "weatherDependent": false,
+    "category": "museum",
+    "openingHours": "10:00-17:00",
+    "stairCount": 10,
+    "hasElevator": false
+  },
+  {
+    "id": "fortress-oreshek",
+    "name": { "ru": "Крепость Орешек", "en": "Oreshek Fortress" },
+    "description": {
+      "ru": "Средневековая крепость на острове",
+      "en": "Medieval fortress on an island"
+    },
+    "location": "Shlisselburg",
+    "coordinates": { "lat": 59.9472, "lng": 31.0333 },
+    "accessibilityScore": 5,
+    "duration": 150,
+    "cost": 400,
+    "weatherDependent": true,
+    "category": "historical",
+    "openingHours": "10:00-18:00",
+    "stairCount": 50,
+    "hasElevator": false
+  },
+  {
+    "id": "nevsky-pyatachok",
+    "name": { "ru": "Невский пятачок", "en": "Nevsky Pyatachok" },
+    "description": {
+      "ru": "Мемориал обороны Ленинграда",
+      "en": "Memorial of Leningrad defense"
+    },
+    "location": "Kirovsk",
+    "coordinates": { "lat": 59.8667, "lng": 31.05 },
+    "accessibilityScore": 9,
+    "duration": 90,
+    "cost": 0,
+    "weatherDependent": false,
+    "category": "historical",
+    "openingHours": "24/7",
+    "stairCount": 5,
+    "hasElevator": false
+  },
+  {
+    "id": "tikhvin-monastery",
+    "name": { "ru": "Тихвинский монастырь", "en": "Tikhvin Monastery" },
+    "description": {
+      "ru": "Древний православный монастырь XVI века",
+      "en": "Ancient 16th century Orthodox monastery"
+    },
+    "location": "Tikhvin",
+    "coordinates": { "lat": 59.6447, "lng": 33.5236 },
+    "accessibilityScore": 6,
+    "duration": 120,
+    "cost": 200,
+    "weatherDependent": false,
+    "category": "religious",
+    "openingHours": "09:00-19:00",
+    "stairCount": 20,
+    "hasElevator": false
+  },
+  {
+    "id": "ladoga-lake",
+    "name": { "ru": "Ладожское озеро", "en": "Lake Ladoga" },
+    "description": {
+      "ru": "Крупнейшее озеро Европы, экскурсии на берегу",
+      "en": "Europe's largest lake, shore excursions"
+    },
+    "location": "Priozersk",
+    "coordinates": { "lat": 61.0402, "lng": 31.0119 },
+    "accessibilityScore": 8,
+    "duration": 180,
+    "cost": 500,
+    "weatherDependent": true,
+    "category": "park",
+    "openingHours": "24/7",
+    "stairCount": 0,
+    "hasElevator": false
+  },
+  {
+    "id": "vyborg-castle",
+    "name": { "ru": "Выборгский замок", "en": "Vyborg Castle" },
+    "description": {
+      "ru": "Средневековый шведский замок XIII века",
+      "en": "13th century medieval Swedish castle"
+    },
+    "location": "Vyborg",
+    "coordinates": { "lat": 60.7157, "lng": 28.7441 },
+    "accessibilityScore": 6,
+    "duration": 150,
+    "cost": 400,
+    "weatherDependent": false,
+    "category": "historical",
+    "openingHours": "10:00-18:00",
+    "stairCount": 80,
+    "hasElevator": false
+  },
+  {
+    "id": "gatchina-palace",
+    "name": { "ru": "Гатчинский дворец", "en": "Gatchina Palace" },
+    "description": {
+      "ru": "Императорская резиденция с парком",
+      "en": "Imperial residence with park"
+    },
+    "location": "Gatchina",
+    "coordinates": { "lat": 59.5631, "lng": 30.1116 },
+    "accessibilityScore": 7,
+    "duration": 180,
+    "cost": 800,
+    "weatherDependent": false,
+    "category": "historical",
+    "openingHours": "10:00-18:00",
+    "stairCount": 40,
+    "hasElevator": true
+  },
+  {
+    "id": "koporye-fortress",
+    "name": { "ru": "Крепость Копорье", "en": "Koporye Fortress" },
+    "description": {
+      "ru": "Древняя русская крепость XIII века",
+      "en": "Ancient 13th century Russian fortress"
+    },
+    "location": "Koporye",
+    "coordinates": { "lat": 59.7167, "lng": 29.05 },
+    "accessibilityScore": 4,
+    "duration": 120,
+    "cost": 300,
+    "weatherDependent": true,
+    "category": "historical",
+    "openingHours": "10:00-17:00",
+    "stairCount": 60,
+    "hasElevator": false
+  },
+  {
+    "id": "local-history-museum",
+    "name": { "ru": "Музей истории Ленинградской области", "en": "Leningrad Oblast History Museum" },
+    "description": {
+      "ru": "Краеведческий музей с экспозициями местной истории",
+      "en": "Local history museum with regional exhibitions"
+    },
+    "location": "Vsevolozhsk",
+    "coordinates": { "lat": 60.0175, "lng": 30.6547 },
+    "accessibilityScore": 9,
+    "duration": 90,
+    "cost": 250,
+    "weatherDependent": false,
+    "category": "museum",
+    "openingHours": "10:00-17:00",
+    "stairCount": 5,
+    "hasElevator": true
+  }
+]

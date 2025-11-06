@@ -1,0 +1,39 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.error {
+  background: #fee;
+  border: 2px solid #f88;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.error h3 {
+  color: #c33;
+  margin-bottom: 0.5rem;
+}
+
+.error p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Tour Planner 55+",
+  "subtitle": "Comfortable routes around Leningrad Oblast",
+  "form": {
+    "days": "Number of days",
+    "budget": "Budget (RUB)",
+    "mobility": "Mobility level",
+    "mobility_high": "High",
+    "mobility_medium": "Medium",
+    "mobility_low": "Low",
+    "interests": "Interests (optional)",
+    "interest_museum": "Museums",
+    "interest_historical": "Historical sites",
+    "interest_park": "Parks",
+    "interest_religious": "Religious sites",
+    "generate": "Generate itinerary"
+  },
+  "result": {
+    "title": "Your Itinerary",
+    "day": "Day",
+    "summary": "Summary",
+    "cost": "Cost",
+    "transfers": "Transfers",
+    "duration": "Duration",
+    "minutes": "min",
+    "rainy": "Rainy day alternatives",
+    "transport": "Transport",
+    "meal": "Meal",
+    "attraction": "Attraction",
+    "total_cost": "Total cost",
+    "total_transfers": "Total transfers"
+  },
+  "error": {
+    "title": "Error",
+    "default": "Failed to generate itinerary. Please try again.",
+    "network": "Network error. Check your connection."
+  },
+  "loading": "Generating itinerary..."
+}

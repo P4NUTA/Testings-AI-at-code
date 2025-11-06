@@ -1,0 +1,56 @@
+[
+  {
+    "id": "rest1",
+    "name": "Старая Крепость",
+    "location": "Shlisselburg",
+    "coordinates": { "lat": 59.9447, "lng": 31.0358 },
+    "avgCost": 800,
+    "cuisine": "Russian",
+    "accessible": true
+  },
+  {
+    "id": "rest2",
+    "name": "Берег",
+    "location": "Priozersk",
+    "coordinates": { "lat": 61.0389, "lng": 31.0142 },
+    "avgCost": 700,
+    "cuisine": "European",
+    "accessible": true
+  },
+  {
+    "id": "rest3",
+    "name": "Гатчина",
+    "location": "Gatchina",
+    "coordinates": { "lat": 59.5642, "lng": 30.1125 },
+    "avgCost": 900,
+    "cuisine": "Russian",
+    "accessible": true
+  },
+  {
+    "id": "rest4",
+    "name": "Выборгский",
+    "location": "Vyborg",
+    "coordinates": { "lat": 60.7125, "lng": 28.7453 },
+    "avgCost": 750,
+    "cuisine": "Finnish",
+    "accessible": true
+  },
+  {
+    "id": "rest5",
+    "name": "Петергофский дворик",
+    "location": "Peterhof",
+    "coordinates": { "lat": 59.8841, "lng": 29.9102 },
+    "avgCost": 950,
+    "cuisine": "European",
+    "accessible": true
+  },
+  {
+    "id": "rest6",
+    "name": "Тихвинский трактир",
+    "location": "Tikhvin",
+    "coordinates": { "lat": 59.6456, "lng": 33.5247 },
+    "avgCost": 650,
+    "cuisine": "Russian",
+    "accessible": true
+  }
+]

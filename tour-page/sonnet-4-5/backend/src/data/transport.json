@@ -1,0 +1,66 @@
+[
+  {
+    "from": "Saint Petersburg",
+    "to": "Peterhof",
+    "duration": 60,
+    "cost": 150,
+    "transfers": 0,
+    "type": "bus"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Gatchina",
+    "duration": 50,
+    "cost": 120,
+    "transfers": 0,
+    "type": "train"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Vyborg",
+    "duration": 90,
+    "cost": 400,
+    "transfers": 0,
+    "type": "train"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Shlisselburg",
+    "duration": 70,
+    "cost": 180,
+    "transfers": 1,
+    "type": "bus"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Tikhvin",
+    "duration": 180,
+    "cost": 500,
+    "transfers": 0,
+    "type": "bus"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Vsevolozhsk",
+    "duration": 40,
+    "cost": 100,
+    "transfers": 0,
+    "type": "bus"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Priozersk",
+    "duration": 150,
+    "cost": 350,
+    "transfers": 0,
+    "type": "bus"
+  },
+  {
+    "from": "Saint Petersburg",
+    "to": "Koporye",
+    "duration": 90,
+    "cost": 200,
+    "transfers": 1,
+    "type": "bus"
+  }
+]

@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Destination {
+  id          Int      @id @default(autoincrement())
+  name        String
+  nameEn      String
+  description String
+  descriptionEn String
+  category    String
+  city        String
+  latitude    Float
+  longitude   Float
+  duration    Int
+  price       Float
+  accessibilityFeatures String
+  isIndoor    Boolean
+  images      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  routesStarting     Route[]       @relation("StartDestination")
+  routesEnding       Route[]       @relation("EndDestination")
+  nearbyAttractions  NearbyAttraction[]
+  accessibilityScore Int           @default(50)
+  restAreas          Int           @default(0)
+  stairsLevel        String        @default("none")
+  elevatorAvailable  Boolean       @default(false)
+  wheelchairAccessible Boolean     @default(false)
+  benchesAvailable   Boolean       @default(false)
+
+  @@index([city])
+  @@index([category])
+  @@index([isIndoor])
+}
+
+model Hotel {
+  id          Int      @id @default(autoincrement())
+  name        String
+  nameEn      String
+  city        String
+  description String
+  descriptionEn String
+  pricePerNight Float
+  stars       Int
+  amenities   String
+  accessibilityFeatures String
+  images      String
+  latitude    Float
+  longitude   Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([city])
+  @@index([stars])
+}
+
+model Restaurant {
+  id          Int      @id @default(autoincrement())
+  name        String
+  nameEn      String
+  city        String
+  cuisine     String
+  description String
+  descriptionEn String
+  averageBill Float
+  accessibilityFeatures String
+  images      String
+  latitude    Float
+  longitude   Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([city])
+  @@index([cuisine])
+}
+
+model Transportation {
+  id          Int      @id @default(autoincrement())
+  type        String
+  fromCity    String
+  toCity      String
+  duration    Int
+  price       Float
+  frequency   String
+  accessibilityFeatures String
+  wheelchairAccessible Boolean @default(false)
+  seniorFriendly Boolean      @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([fromCity])
+  @@index([toCity])
+  @@index([type])
+}
+
+model Route {
+  id              Int      @id @default(autoincrement())
+  startDestinationId Int
+  endDestinationId Int
+  distance        Float
+  travelTime      Int
+  transportType   String
+  difficulty      String   @default("easy")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  startDestination Destination @relation("StartDestination", fields: [startDestinationId], references: [id])
+  endDestination   Destination @relation("EndDestination", fields: [endDestinationId], references: [id])
+
+  @@index([startDestinationId])
+  @@index([endDestinationId])
+}
+
+model Itinerary {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  days        Int
+  startDate   DateTime
+  budget      Float
+  preferences String
+  itineraryData String
+  totalCost   Float
+  accessibilityLevel String @default("high")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([userId])
+  @@index([startDate])
+}
+
+model NearbyAttraction {
+  id              Int      @id @default(autoincrement())
+  destinationId   Int
+  attractionName  String
+  distance        Float
+  walkingTime     Int
+  recommended     Boolean  @default(false)
+
+  destination     Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+
+  @@index([destinationId])
+}
