@@ -1,0 +1,22 @@
+{
+  "name": "tour-planner-55plus",
+  "version": "1.0.0",
+  "description": "Comfort-first itineraries for 55+ travelers in Leningrad Oblast with offline mock data.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "NODE_ENV=development nodemon src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22",
+    "supertest": "6.3.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

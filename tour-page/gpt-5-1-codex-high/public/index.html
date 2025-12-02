@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Planner 55+ — Ленинградская область</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Комфортные маршруты 55+</p>
+          <h1 data-i18n="title">Планировщик поездок по Ленобласти</h1>
+          <p class="lead" data-i18n="subtitle">
+            1–3 дня без спешки: мало лестниц, короткие переезды, резерв на дождливую погоду.
+          </p>
+        </div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="card form-card">
+          <h2 data-i18n="formTitle">Настройки поездки</h2>
+          <form id="plan-form">
+            <label class="field">
+              <span data-i18n="daysLabel">Сколько дней?</span>
+              <select name="days" id="days">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+
+            <fieldset class="field">
+              <legend data-i18n="mobilityLabel">Темп и подвижность</legend>
+              <label class="option">
+                <input type="radio" name="mobility" value="low" checked />
+                <span data-i18n="mobilityLow">Мало лестниц и короткие переходы</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="mobility" value="medium" />
+                <span data-i18n="mobilityMedium">Спокойный темп, можно пару лестниц</span>
+              </label>
+            </fieldset>
+
+            <label class="field">
+              <span data-i18n="budgetLabel">Бюджет</span>
+              <select name="budget" id="budget">
+                <option value="budget" data-i18n="budgetBudget">Эконом</option>
+                <option value="standard" selected data-i18n="budgetStandard">Стандарт</option>
+                <option value="comfort" data-i18n="budgetComfort">Комфорт</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span data-i18n="seedLabel">Детерминированный seed (необязательно)</span>
+              <input type="text" name="seed" id="seed" placeholder="lenobl-55plus" />
+            </label>
+
+            <button type="submit" class="primary-btn" id="submit-btn" data-i18n="buildButton">
+              Сформировать маршрут
+            </button>
+            <p class="hint" data-i18n="hint">
+              Мы не обращаемся к внешним сервисам — вся информация из локального набора.
+            </p>
+          </form>
+        </section>
+
+        <section class="card results-card">
+          <div class="results-header">
+            <h2 data-i18n="resultTitle">Ваш маршрут</h2>
+            <div class="badge" id="seed-label">seed: lenobl-55plus-seed</div>
+          </div>
+          <div id="status" class="status"></div>
+          <div id="results"></div>
+          <div id="rainy"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

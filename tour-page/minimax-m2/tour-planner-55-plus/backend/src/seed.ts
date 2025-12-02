@@ -128,13 +128,13 @@ async function main() {
         longitude: 30.3982,
         duration: 150,
         price: 600,
-        accessibilityFeatures: {
+        accessibilityFeatures: JSON.stringify({
           elevator: true,
           wheelchairAccessible: true,
           ramp: true,
-        },
+        }),
         isIndoor: true,
-        images: ['https://example.com/catherine1.jpg'],
+        images: 'https://example.com/catherine1.jpg',
         accessibilityScore: 88,
         restAreas: 10,
         stairsLevel: 'few',

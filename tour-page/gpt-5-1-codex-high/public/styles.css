@@ -1,0 +1,247 @@
+:root {
+  --bg: #f3f1eb;
+  --panel: #ffffff;
+  --accent: #247ba0;
+  --accent-2: #ff9f1c;
+  --text: #1f2b3a;
+  --muted: #52606d;
+  --shadow: 0 14px 40px rgba(31, 43, 58, 0.1);
+  --radius: 16px;
+  --font: "Trebuchet MS", "Gill Sans", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: radial-gradient(120% 80% at 20% 20%, rgba(255, 159, 28, 0.15), transparent),
+    radial-gradient(100% 70% at 80% 0%, rgba(36, 123, 160, 0.15), transparent), var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+.app-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 700;
+  min-width: 52px;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(31, 43, 58, 0.05);
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+select,
+input[type="text"] {
+  border: 1px solid rgba(31, 43, 58, 0.15);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-family: var(--font);
+  background: #fdfdfd;
+}
+
+fieldset {
+  border: 1px solid rgba(31, 43, 58, 0.08);
+  border-radius: 12px;
+  padding: 10px 12px 6px;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.primary-btn {
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, var(--accent), #2c9bbf);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 20px rgba(36, 123, 160, 0.25);
+  transition: transform 0.1s ease;
+}
+
+.primary-btn:active {
+  transform: translateY(1px);
+}
+
+.hint {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.badge {
+  background: rgba(36, 123, 160, 0.1);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status {
+  margin: 10px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.day {
+  border: 1px dashed rgba(31, 43, 58, 0.08);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+  background: linear-gradient(120deg, rgba(255, 159, 28, 0.06), rgba(36, 123, 160, 0.05));
+}
+
+.day-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.segments {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.segments li {
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(31, 43, 58, 0.06);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.alt-header {
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.pill {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: rgba(31, 43, 58, 0.06);
+  margin-right: 6px;
+}
+
+.error {
+  color: #b00020;
+  background: rgba(176, 0, 32, 0.08);
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(176, 0, 32, 0.2);
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    flex-direction: column;
+  }
+  .results-header {
+    align-items: flex-start;
+  }
+}
