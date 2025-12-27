@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Threadwise - AI Host for Community Builders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f6f1e8;
+      --wash: #fbf8f2;
+      --ink: #1f1a16;
+      --muted: #6b6158;
+      --line: #e1d9cc;
+      --accent: #d3511f;
+      --accent-dark: #9f3a15;
+      --forest: #183629;
+      --card: rgba(255, 255, 255, 0.72);
+      --shadow: 0 18px 45px rgba(40, 32, 22, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Source Serif 4", "Georgia", serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 10% 20%, rgba(211, 81, 31, 0.08), transparent 45%),
+                  radial-gradient(circle at 85% 0%, rgba(24, 54, 41, 0.12), transparent 40%),
+                  linear-gradient(180deg, var(--wash) 0%, var(--paper) 100%);
+      min-height: 100vh;
+      padding: 56px 20px 96px;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0 1px, transparent 1px 7px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+      font-family: "Space Grotesk", sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    nav .brand {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      margin-left: 18px;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: var(--ink);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(120px, 180px) 1fr;
+      gap: 28px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 56px;
+    }
+
+    .eyebrow {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+    .hero-copy {
+      font-size: 22px;
+      max-width: 640px;
+      color: #302a24;
+      margin-bottom: 24px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 12px 22px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fffaf6;
+      box-shadow: 0 12px 26px rgba(211, 81, 31, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: minmax(120px, 180px) 1fr;
+      gap: 28px;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .content p {
+      margin-bottom: 16px;
+      max-width: 720px;
+    }
+
+    .callout {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 24px;
+      border: 1px solid rgba(24, 54, 41, 0.12);
+      box-shadow: var(--shadow);
+    }
+
+    .callout strong {
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 22px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 28px rgba(40, 32, 22, 0.08);
+    }
+
+    .card h3 {
+      font-family: "Space Grotesk", sans-serif;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .label {
+      font-family: "Space Grotesk", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .stat {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 26px;
+      margin-bottom: 6px;
+      color: var(--forest);
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 24px;
+      border-left: 2px solid rgba(24, 54, 41, 0.2);
+    }
+
+    .step {
+      margin-bottom: 18px;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step h3 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
+      font-style: italic;
+      color: #2c241d;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .footnote {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: rise 0.7s ease forwards;
+      animation-delay: var(--delay, 0s);
+    }
+
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 860px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      header,
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 36px 16px 72px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 8vw, 52px);
+      }
+
+      .hero-copy {
+        font-size: 19px;
+      }
+
+      .cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="reveal" style="--delay: 0.05s">
+      <div class="brand">Threadwise</div>
+      <div>
+        <a href="#benefits">Benefits</a>
+        <a href="#how">How it works</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+
+    <header class="reveal" style="--delay: 0.1s">
+      <div class="eyebrow">Field Notes / Community AI</div>
+      <div>
+        <h1>An AI host for communities that want to feel alive.</h1>
+        <p class="hero-copy">
+          Threadwise is a calm, opinionated bot that welcomes members, connects
+          them with the right people, and keeps conversation energy steady - even
+          when your team sleeps.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#">Request early access</a>
+          <a class="btn btn-secondary" href="#">Get the community playbook</a>
+          <span class="muted">Slack, Discord, Circle, Discourse.</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="benefits" class="reveal" style="--delay: 0.15s">
+      <div class="label">What changes</div>
+      <div class="content">
+        <h2>Communities stall when energy gets ignored.</h2>
+        <p>
+          Most platforms measure activity. Threadwise protects momentum. It
+          watches the social graph, remembers the human details, and nudges
+          conversations so members feel noticed instead of processed.
+        </p>
+        <div class="grid grid-3">
+          <article class="card reveal" style="--delay: 0.2s">
+            <h3>Faster belonging</h3>
+            <p>
+              New members receive a personal welcome, a buddy match, and the
+              right threads to join in their first hour.
+            </p>
+          </article>
+          <article class="card reveal" style="--delay: 0.28s">
+            <h3>Momentum without burnout</h3>
+            <p>
+              Threadwise schedules prompts, recaps long debates, and keeps
+              weekend silence from becoming a trend.
+            </p>
+          </article>
+          <article class="card reveal" style="--delay: 0.36s">
+            <h3>Memory at scale</h3>
+            <p>
+              Every project, timezone, and inside joke stays searchable so late
+              arrivals never feel late.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" style="--delay: 0.18s">
+      <div class="label">The bot</div>
+      <div class="content">
+        <h2>What Threadwise actually does.</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Onboarding concierge</h3>
+            <p>
+              Auto-DM intros, role prompts, and personal check-ins so every
+              member feels met, not dumped into a channel list.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Thread conductor</h3>
+            <p>
+              Starts follow-up questions when a discussion peaks, and routes the
+              best ideas to the people who can act on them.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Community memory</h3>
+            <p>
+              Summarizes long talks, tags key decisions, and builds a shared map
+              of everything the community already knows.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Quiet health checks</h3>
+            <p>
+              Weekly digests surface who is drifting, what energy is rising, and
+              where new rituals are needed.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="reveal" style="--delay: 0.22s">
+      <div class="label">How it works</div>
+      <div class="content">
+        <h2>Three weeks to a calmer community.</h2>
+        <div class="timeline">
+          <div class="step">
+            <h3>Week 0 - Map the living history</h3>
+            <p>Import Slack or Discord archives. Threadwise builds the graph.</p>
+          </div>
+          <div class="step">
+            <h3>Week 1 - Teach the rituals</h3>
+            <p>Define greetings, prompts, and escalation rules in plain language.</p>
+          </div>
+          <div class="step">
+            <h3>Week 3 - Autopilot with guardrails</h3>
+            <p>Bot runs the routine, humans stay in control and approve key moves.</p>
+          </div>
+        </div>
+        <p class="footnote">No migrations. No bots spamming. You set the voice.</p>
+      </div>
+    </section>
+
+    <section id="results" class="reveal" style="--delay: 0.26s">
+      <div class="label">Results</div>
+      <div class="content">
+        <h2>What community leaders report after 60 days.</h2>
+        <div class="stat-row">
+          <div class="stat">
+            <strong>2.3x</strong>
+            Weekly posts from new members.
+          </div>
+          <div class="stat">
+            <strong>-38%</strong>
+            Moderator time spent on follow-ups.
+          </div>
+          <div class="stat">
+            <strong>72%</strong>
+            Faster response on unanswered threads.
+          </div>
+        </div>
+        <div class="callout" style="margin-top: 20px;">
+          <blockquote>
+            "We stopped chasing participation and started curating energy. The
+            bot catches silences before they become ghost towns."
+          </blockquote>
+          <p><strong>Lea R.</strong> - Head of Community, remote-first studio</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" style="--delay: 0.3s">
+      <div class="label">Why it matters</div>
+      <div class="content">
+        <h2>Less noise, more belonging.</h2>
+        <p>
+          Communities are not feeds. They are relationships. Threadwise pays
+          attention to the soft signals - who just joined, who stopped posting,
+          who is asking the same question again - and gently closes the loop.
+        </p>
+        <ul>
+          <li>Default responses are human, warm, and editable.</li>
+          <li>Private data stays isolated with audit logs and manual overrides.</li>
+          <li>Works inside your current stack, not as another place to manage.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="reveal" style="--delay: 0.34s">
+      <div class="label">FAQ</div>
+      <div class="content">
+        <h2>Short answers for community builders.</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Is this just another chatbot?</h3>
+            <p>
+              No. It listens, summarizes, and nudges. It only speaks when
+              context says it should.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Does it replace moderators?</h3>
+            <p>
+              It clears the routine work so moderators can focus on the human
+              work.
+            </p>
+          </article>
+          <article class="card">
+            <h3>How do we control the voice?</h3>
+            <p>
+              You set examples, tone, and guardrails. Every message is editable.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Who is it for?</h3>
+            <p>
+              Founders, community leads, and product teams who want a living
+              community without nonstop babysitting.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" style="--delay: 0.38s">
+      <div class="label">Ready?</div>
+      <div class="content">
+        <h2>Let the bot handle the boring parts.</h2>
+        <p>
+          Tell us about your community size, platform, and the rituals you want
+          to protect. We will reply with a tailored launch plan within 48 hours.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#">Book a 15-min walkthrough</a>
+          <a class="btn btn-secondary" href="#">See a sample weekly report</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal" style="--delay: 0.42s">
+      <span>Threadwise Studio, 2024.</span>
+      <span>hello@threadwise.bot</span>
+    </footer>
+  </main>
+</body>
+</html>
