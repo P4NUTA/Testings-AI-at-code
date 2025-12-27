@@ -1,0 +1,30 @@
+.switch {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-xs);
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-md);
+}
+
+.button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button.active {
+  background: white;
+  color: var(--color-primary);
+}

@@ -1,0 +1,294 @@
+{
+  "routes": [
+    {
+      "fromLocationId": "center",
+      "toLocationId": "peterhof",
+      "options": [
+        {
+          "id": "peterhof-bus",
+          "type": "bus",
+          "name": { "ru": "Автобус К-404", "en": "Bus K-404" },
+          "transferCount": 0,
+          "duration": 60,
+          "cost": 100,
+          "accessibilityScore": 4,
+          "frequency": "каждые 15 мин"
+        },
+        {
+          "id": "peterhof-train",
+          "type": "train",
+          "name": { "ru": "Электричка до Нового Петергофа", "en": "Train to Novy Peterhof" },
+          "transferCount": 0,
+          "duration": 45,
+          "cost": 65,
+          "accessibilityScore": 3,
+          "frequency": "каждые 30 мин"
+        },
+        {
+          "id": "peterhof-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 40,
+          "cost": 1500,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "tsarskoye-selo",
+      "options": [
+        {
+          "id": "pushkin-bus",
+          "type": "bus",
+          "name": { "ru": "Автобус К-545", "en": "Bus K-545" },
+          "transferCount": 0,
+          "duration": 50,
+          "cost": 80,
+          "accessibilityScore": 4,
+          "frequency": "каждые 10 мин"
+        },
+        {
+          "id": "pushkin-train",
+          "type": "train",
+          "name": { "ru": "Электричка до Пушкина", "en": "Train to Pushkin" },
+          "transferCount": 0,
+          "duration": 30,
+          "cost": 55,
+          "accessibilityScore": 3,
+          "frequency": "каждые 20 мин"
+        },
+        {
+          "id": "pushkin-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 35,
+          "cost": 1200,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "pavlovsk",
+      "options": [
+        {
+          "id": "pavlovsk-train",
+          "type": "train",
+          "name": { "ru": "Электричка до Павловска", "en": "Train to Pavlovsk" },
+          "transferCount": 0,
+          "duration": 35,
+          "cost": 60,
+          "accessibilityScore": 3,
+          "frequency": "каждые 20 мин"
+        },
+        {
+          "id": "pavlovsk-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 40,
+          "cost": 1300,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "gatchina",
+      "options": [
+        {
+          "id": "gatchina-train",
+          "type": "train",
+          "name": { "ru": "Электричка до Гатчины", "en": "Train to Gatchina" },
+          "transferCount": 0,
+          "duration": 55,
+          "cost": 80,
+          "accessibilityScore": 3,
+          "frequency": "каждые 30 мин"
+        },
+        {
+          "id": "gatchina-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 50,
+          "cost": 1800,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "kronstadt",
+      "options": [
+        {
+          "id": "kronstadt-bus",
+          "type": "bus",
+          "name": { "ru": "Автобус К-405", "en": "Bus K-405" },
+          "transferCount": 0,
+          "duration": 70,
+          "cost": 100,
+          "accessibilityScore": 4,
+          "frequency": "каждые 20 мин"
+        },
+        {
+          "id": "kronstadt-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 50,
+          "cost": 2000,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "vyborg",
+      "options": [
+        {
+          "id": "vyborg-train",
+          "type": "train",
+          "name": { "ru": "Ласточка до Выборга", "en": "Lastochka to Vyborg" },
+          "transferCount": 0,
+          "duration": 75,
+          "cost": 400,
+          "accessibilityScore": 4,
+          "frequency": "каждые час"
+        },
+        {
+          "id": "vyborg-bus",
+          "type": "bus",
+          "name": { "ru": "Автобус", "en": "Bus" },
+          "transferCount": 0,
+          "duration": 120,
+          "cost": 350,
+          "accessibilityScore": 3,
+          "frequency": "каждые 2 часа"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "oranienbaum",
+      "options": [
+        {
+          "id": "oranienbaum-train",
+          "type": "train",
+          "name": { "ru": "Электричка до Ораниенбаума", "en": "Train to Oranienbaum" },
+          "transferCount": 0,
+          "duration": 50,
+          "cost": 70,
+          "accessibilityScore": 3,
+          "frequency": "каждые 30 мин"
+        },
+        {
+          "id": "oranienbaum-taxi",
+          "type": "taxi",
+          "name": { "ru": "Такси", "en": "Taxi" },
+          "transferCount": 0,
+          "duration": 45,
+          "cost": 1600,
+          "accessibilityScore": 5,
+          "frequency": "по запросу"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "hermitage",
+      "options": [
+        {
+          "id": "hermitage-metro",
+          "type": "metro",
+          "name": { "ru": "Метро до Адмиралтейской", "en": "Metro to Admiralteyskaya" },
+          "transferCount": 0,
+          "duration": 15,
+          "cost": 70,
+          "accessibilityScore": 4,
+          "frequency": "каждые 3 мин"
+        },
+        {
+          "id": "hermitage-walk",
+          "type": "walking",
+          "name": { "ru": "Пешком по Невскому", "en": "Walk along Nevsky" },
+          "transferCount": 0,
+          "duration": 25,
+          "cost": 0,
+          "accessibilityScore": 5,
+          "frequency": "всегда"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "russian-museum",
+      "options": [
+        {
+          "id": "rm-metro",
+          "type": "metro",
+          "name": { "ru": "Метро до Гостиного двора", "en": "Metro to Gostiny Dvor" },
+          "transferCount": 0,
+          "duration": 10,
+          "cost": 70,
+          "accessibilityScore": 4,
+          "frequency": "каждые 3 мин"
+        },
+        {
+          "id": "rm-walk",
+          "type": "walking",
+          "name": { "ru": "Пешком", "en": "Walking" },
+          "transferCount": 0,
+          "duration": 15,
+          "cost": 0,
+          "accessibilityScore": 5,
+          "frequency": "всегда"
+        }
+      ]
+    },
+    {
+      "fromLocationId": "center",
+      "toLocationId": "peter-paul-fortress",
+      "options": [
+        {
+          "id": "ppf-metro",
+          "type": "metro",
+          "name": { "ru": "Метро до Горьковской", "en": "Metro to Gorkovskaya" },
+          "transferCount": 0,
+          "duration": 15,
+          "cost": 70,
+          "accessibilityScore": 4,
+          "frequency": "каждые 3 мин"
+        },
+        {
+          "id": "ppf-walk",
+          "type": "walking",
+          "name": { "ru": "Пешком через Троицкий мост", "en": "Walk across Trinity Bridge" },
+          "transferCount": 0,
+          "duration": 30,
+          "cost": 0,
+          "accessibilityScore": 5,
+          "frequency": "всегда"
+        }
+      ]
+    }
+  ],
+  "defaultOptions": {
+    "taxi": {
+      "type": "taxi",
+      "name": { "ru": "Такси", "en": "Taxi" },
+      "transferCount": 0,
+      "baseCost": 500,
+      "costPerKm": 30,
+      "accessibilityScore": 5
+    }
+  }
+}

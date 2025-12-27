@@ -1,0 +1,307 @@
+{
+  "cities": [
+    {
+      "id": "vyborg",
+      "name_ru": "Выборг",
+      "name_en": "Vyborg",
+      "distance_km": 130,
+      "travel_time_hours": 2.1,
+      "transfer_count": 1,
+      "transport_ru": "электричка",
+      "transport_en": "commuter train"
+    },
+    {
+      "id": "gatchina",
+      "name_ru": "Гатчина",
+      "name_en": "Gatchina",
+      "distance_km": 45,
+      "travel_time_hours": 1.0,
+      "transfer_count": 1,
+      "transport_ru": "электричка",
+      "transport_en": "commuter train"
+    },
+    {
+      "id": "pavlovsk",
+      "name_ru": "Павловск",
+      "name_en": "Pavlovsk",
+      "distance_km": 30,
+      "travel_time_hours": 0.8,
+      "transfer_count": 1,
+      "transport_ru": "электричка",
+      "transport_en": "commuter train"
+    },
+    {
+      "id": "shlisselburg",
+      "name_ru": "Шлиссельбург",
+      "name_en": "Shlisselburg",
+      "distance_km": 55,
+      "travel_time_hours": 1.2,
+      "transfer_count": 1,
+      "transport_ru": "автобус",
+      "transport_en": "bus"
+    },
+    {
+      "id": "kronstadt",
+      "name_ru": "Кронштадт",
+      "name_en": "Kronstadt",
+      "distance_km": 50,
+      "travel_time_hours": 1.1,
+      "transfer_count": 1,
+      "transport_ru": "автобус",
+      "transport_en": "bus"
+    },
+    {
+      "id": "tikhvin",
+      "name_ru": "Тихвин",
+      "name_en": "Tikhvin",
+      "distance_km": 230,
+      "travel_time_hours": 3.4,
+      "transfer_count": 1,
+      "transport_ru": "поезд",
+      "transport_en": "train"
+    },
+    {
+      "id": "staraya_ladoga",
+      "name_ru": "Старая Ладога",
+      "name_en": "Staraya Ladoga",
+      "distance_km": 120,
+      "travel_time_hours": 2.0,
+      "transfer_count": 1,
+      "transport_ru": "автобус",
+      "transport_en": "bus"
+    }
+  ],
+  "attractions": [
+    {
+      "id": "vyb_castle",
+      "city_id": "vyborg",
+      "name_ru": "Выборгский замок (двор и музей)",
+      "name_en": "Vyborg Castle (courtyard and museum)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 1,
+      "duration_hours": 1.5,
+      "cost_rub": 500
+    },
+    {
+      "id": "monrepos",
+      "city_id": "vyborg",
+      "name_ru": "Парк Монрепо (нижние аллеи)",
+      "name_en": "Monrepos Park (lower alleys)",
+      "type": "park",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.5,
+      "cost_rub": 300
+    },
+    {
+      "id": "vyb_old_town",
+      "city_id": "vyborg",
+      "name_ru": "Прогулка по Старому городу (пологий маршрут)",
+      "name_en": "Old Town walk (gentle route)",
+      "type": "walk",
+      "indoor": false,
+      "stairs_level": 1,
+      "duration_hours": 1.2,
+      "cost_rub": 0
+    },
+    {
+      "id": "gatchina_palace",
+      "city_id": "gatchina",
+      "name_ru": "Гатчинский дворец (основные залы)",
+      "name_en": "Gatchina Palace (main halls)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 1,
+      "duration_hours": 1.6,
+      "cost_rub": 600
+    },
+    {
+      "id": "gatchina_park",
+      "city_id": "gatchina",
+      "name_ru": "Дворцовый парк (центральная часть)",
+      "name_en": "Palace Park (central area)",
+      "type": "park",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.4,
+      "cost_rub": 200
+    },
+    {
+      "id": "gatchina_museum",
+      "city_id": "gatchina",
+      "name_ru": "Городской музей (без лестниц)",
+      "name_en": "City Museum (step-free)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 1.0,
+      "cost_rub": 250
+    },
+    {
+      "id": "pavlovsk_palace",
+      "city_id": "pavlovsk",
+      "name_ru": "Павловский дворец (основные залы)",
+      "name_en": "Pavlovsk Palace (main halls)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 1,
+      "duration_hours": 1.4,
+      "cost_rub": 600
+    },
+    {
+      "id": "pavlovsk_park",
+      "city_id": "pavlovsk",
+      "name_ru": "Павловский парк (береговые маршруты)",
+      "name_en": "Pavlovsk Park (riverside paths)",
+      "type": "park",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.6,
+      "cost_rub": 200
+    },
+    {
+      "id": "pavlovsk_museum",
+      "city_id": "pavlovsk",
+      "name_ru": "Музей-аптека (первый этаж)",
+      "name_en": "Pharmacy Museum (ground floor)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 0.8,
+      "cost_rub": 200
+    },
+    {
+      "id": "shlisselburg_fortress",
+      "city_id": "shlisselburg",
+      "name_ru": "Крепость Орешек (легкий маршрут)",
+      "name_en": "Oreshek Fortress (easy route)",
+      "type": "historical",
+      "indoor": false,
+      "stairs_level": 1,
+      "duration_hours": 1.5,
+      "cost_rub": 450
+    },
+    {
+      "id": "shlisselburg_museum",
+      "city_id": "shlisselburg",
+      "name_ru": "Музей истории города (без лестниц)",
+      "name_en": "Town History Museum (step-free)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 0.9,
+      "cost_rub": 250
+    },
+    {
+      "id": "shlisselburg_embank",
+      "city_id": "shlisselburg",
+      "name_ru": "Набережная Невы (ровная прогулка)",
+      "name_en": "Neva embankment (flat walk)",
+      "type": "walk",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.0,
+      "cost_rub": 0
+    },
+    {
+      "id": "kronstadt_naval",
+      "city_id": "kronstadt",
+      "name_ru": "Морской собор (основной зал)",
+      "name_en": "Naval Cathedral (main hall)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 1.1,
+      "cost_rub": 0
+    },
+    {
+      "id": "kronstadt_forts",
+      "city_id": "kronstadt",
+      "name_ru": "Форты с обзорной площадкой (минимум лестниц)",
+      "name_en": "Forts with viewpoint (minimal stairs)",
+      "type": "historical",
+      "indoor": false,
+      "stairs_level": 1,
+      "duration_hours": 1.2,
+      "cost_rub": 350
+    },
+    {
+      "id": "kronstadt_park",
+      "city_id": "kronstadt",
+      "name_ru": "Петровский парк (ровные дорожки)",
+      "name_en": "Petrovsky Park (flat paths)",
+      "type": "park",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.0,
+      "cost_rub": 0
+    },
+    {
+      "id": "tikhvin_monastery",
+      "city_id": "tikhvin",
+      "name_ru": "Тихвинский монастырь (основные храмы)",
+      "name_en": "Tikhvin Monastery (main churches)",
+      "type": "historical",
+      "indoor": true,
+      "stairs_level": 1,
+      "duration_hours": 1.5,
+      "cost_rub": 0
+    },
+    {
+      "id": "tikhvin_museum",
+      "city_id": "tikhvin",
+      "name_ru": "Дом-музей Римского-Корсакова (первый этаж)",
+      "name_en": "Rimsky-Korsakov House Museum (ground floor)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 1.0,
+      "cost_rub": 300
+    },
+    {
+      "id": "tikhvin_square",
+      "city_id": "tikhvin",
+      "name_ru": "Центральная площадь (ровный маршрут)",
+      "name_en": "Central square (flat route)",
+      "type": "walk",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 0.8,
+      "cost_rub": 0
+    },
+    {
+      "id": "ladoga_fort",
+      "city_id": "staraya_ladoga",
+      "name_ru": "Староладожская крепость (легкий маршрут)",
+      "name_en": "Old Ladoga Fortress (easy route)",
+      "type": "historical",
+      "indoor": false,
+      "stairs_level": 1,
+      "duration_hours": 1.4,
+      "cost_rub": 400
+    },
+    {
+      "id": "ladoga_museum",
+      "city_id": "staraya_ladoga",
+      "name_ru": "Краеведческий музей (без лестниц)",
+      "name_en": "Local History Museum (step-free)",
+      "type": "museum",
+      "indoor": true,
+      "stairs_level": 0,
+      "duration_hours": 0.9,
+      "cost_rub": 250
+    },
+    {
+      "id": "ladoga_river",
+      "city_id": "staraya_ladoga",
+      "name_ru": "Набережная Волхова (ровная прогулка)",
+      "name_en": "Volkhov embankment (flat walk)",
+      "type": "walk",
+      "indoor": false,
+      "stairs_level": 0,
+      "duration_hours": 1.0,
+      "cost_rub": 0
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "id": "peterhof",
+    "name": { "ru": "Петергоф", "en": "Peterhof Palace" },
+    "description": {
+      "ru": "Дворцово-парковый ансамбль с знаменитыми фонтанами на берегу Финского залива",
+      "en": "Palace and park ensemble with famous fountains on the Gulf of Finland shore"
+    },
+    "location": "Петергоф",
+    "category": "palace",
+    "accessibilityScore": 3,
+    "stairsLevel": "moderate",
+    "isIndoor": false,
+    "estimatedDuration": 180,
+    "entranceFee": 1000,
+    "openingHours": "09:00-20:00",
+    "imageUrl": "/images/peterhof.jpg",
+    "rainyDayAlternativeId": "hermitage"
+  },
+  {
+    "id": "hermitage",
+    "name": { "ru": "Эрмитаж", "en": "Hermitage Museum" },
+    "description": {
+      "ru": "Один из крупнейших художественных музеев мира в Зимнем дворце",
+      "en": "One of the world's largest art museums in the Winter Palace"
+    },
+    "location": "Санкт-Петербург",
+    "category": "museum",
+    "accessibilityScore": 4,
+    "stairsLevel": "few",
+    "isIndoor": true,
+    "estimatedDuration": 240,
+    "entranceFee": 500,
+    "openingHours": "10:30-18:00",
+    "imageUrl": "/images/hermitage.jpg"
+  },
+  {
+    "id": "tsarskoye-selo",
+    "name": { "ru": "Царское Село", "en": "Tsarskoye Selo" },
+    "description": {
+      "ru": "Екатерининский дворец с Янтарной комнатой и прекрасные парки",
+      "en": "Catherine Palace with Amber Room and beautiful parks"
+    },
+    "location": "Пушкин",
+    "category": "palace",
+    "accessibilityScore": 3,
+    "stairsLevel": "moderate",
+    "isIndoor": false,
+    "estimatedDuration": 180,
+    "entranceFee": 850,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/tsarskoye.jpg",
+    "rainyDayAlternativeId": "russian-museum"
+  },
+  {
+    "id": "russian-museum",
+    "name": { "ru": "Русский музей", "en": "Russian Museum" },
+    "description": {
+      "ru": "Крупнейший музей русского искусства в Михайловском дворце",
+      "en": "The largest museum of Russian art in Mikhailovsky Palace"
+    },
+    "location": "Санкт-Петербург",
+    "category": "museum",
+    "accessibilityScore": 4,
+    "stairsLevel": "few",
+    "isIndoor": true,
+    "estimatedDuration": 180,
+    "entranceFee": 450,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/russian-museum.jpg"
+  },
+  {
+    "id": "pavlovsk",
+    "name": { "ru": "Павловск", "en": "Pavlovsk Palace" },
+    "description": {
+      "ru": "Дворец императора Павла I с крупнейшим пейзажным парком Европы",
+      "en": "Emperor Paul I's palace with Europe's largest landscape park"
+    },
+    "location": "Павловск",
+    "category": "palace",
+    "accessibilityScore": 3,
+    "stairsLevel": "moderate",
+    "isIndoor": false,
+    "estimatedDuration": 150,
+    "entranceFee": 600,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/pavlovsk.jpg",
+    "rainyDayAlternativeId": "ethnographic-museum"
+  },
+  {
+    "id": "peter-paul-fortress",
+    "name": { "ru": "Петропавловская крепость", "en": "Peter and Paul Fortress" },
+    "description": {
+      "ru": "Историческое ядро Санкт-Петербурга с собором и музеями",
+      "en": "Historic heart of St. Petersburg with cathedral and museums"
+    },
+    "location": "Санкт-Петербург",
+    "category": "fortress",
+    "accessibilityScore": 3,
+    "stairsLevel": "few",
+    "isIndoor": false,
+    "estimatedDuration": 120,
+    "entranceFee": 550,
+    "openingHours": "10:00-19:00",
+    "imageUrl": "/images/fortress.jpg",
+    "rainyDayAlternativeId": "hermitage"
+  },
+  {
+    "id": "gatchina",
+    "name": { "ru": "Гатчина", "en": "Gatchina Palace" },
+    "description": {
+      "ru": "Дворец-замок с подземным ходом и живописными парками",
+      "en": "Castle-palace with underground passage and picturesque parks"
+    },
+    "location": "Гатчина",
+    "category": "palace",
+    "accessibilityScore": 3,
+    "stairsLevel": "moderate",
+    "isIndoor": false,
+    "estimatedDuration": 150,
+    "entranceFee": 500,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/gatchina.jpg",
+    "rainyDayAlternativeId": "artillery-museum"
+  },
+  {
+    "id": "artillery-museum",
+    "name": { "ru": "Артиллерийский музей", "en": "Artillery Museum" },
+    "description": {
+      "ru": "Один из крупнейших военно-исторических музеев мира",
+      "en": "One of the world's largest military history museums"
+    },
+    "location": "Санкт-Петербург",
+    "category": "museum",
+    "accessibilityScore": 4,
+    "stairsLevel": "few",
+    "isIndoor": true,
+    "estimatedDuration": 120,
+    "entranceFee": 400,
+    "openingHours": "11:00-18:00",
+    "imageUrl": "/images/artillery.jpg"
+  },
+  {
+    "id": "ethnographic-museum",
+    "name": { "ru": "Этнографический музей", "en": "Ethnographic Museum" },
+    "description": {
+      "ru": "Музей народов России с уникальными коллекциями быта и культуры",
+      "en": "Museum of Russian peoples with unique collections of life and culture"
+    },
+    "location": "Санкт-Петербург",
+    "category": "museum",
+    "accessibilityScore": 5,
+    "stairsLevel": "none",
+    "isIndoor": true,
+    "estimatedDuration": 120,
+    "entranceFee": 350,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/ethnographic.jpg"
+  },
+  {
+    "id": "oranienbaum",
+    "name": { "ru": "Ораниенбаум", "en": "Oranienbaum" },
+    "description": {
+      "ru": "Дворцово-парковый ансамбль XVIII века, сохранивший подлинные интерьеры",
+      "en": "18th-century palace and park ensemble with authentic interiors"
+    },
+    "location": "Ломоносов",
+    "category": "palace",
+    "accessibilityScore": 3,
+    "stairsLevel": "moderate",
+    "isIndoor": false,
+    "estimatedDuration": 150,
+    "entranceFee": 450,
+    "openingHours": "10:30-18:00",
+    "imageUrl": "/images/oranienbaum.jpg",
+    "rainyDayAlternativeId": "naval-museum"
+  },
+  {
+    "id": "naval-museum",
+    "name": { "ru": "Военно-морской музей", "en": "Naval Museum" },
+    "description": {
+      "ru": "Богатейшая коллекция по истории российского флота",
+      "en": "Rich collection on the history of the Russian Navy"
+    },
+    "location": "Санкт-Петербург",
+    "category": "museum",
+    "accessibilityScore": 4,
+    "stairsLevel": "few",
+    "isIndoor": true,
+    "estimatedDuration": 120,
+    "entranceFee": 400,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/naval.jpg"
+  },
+  {
+    "id": "summer-garden",
+    "name": { "ru": "Летний сад", "en": "Summer Garden" },
+    "description": {
+      "ru": "Старейший парк Санкт-Петербурга с мраморными скульптурами",
+      "en": "Oldest park of St. Petersburg with marble sculptures"
+    },
+    "location": "Санкт-Петербург",
+    "category": "park",
+    "accessibilityScore": 5,
+    "stairsLevel": "none",
+    "isIndoor": false,
+    "estimatedDuration": 90,
+    "entranceFee": 0,
+    "openingHours": "10:00-22:00",
+    "imageUrl": "/images/summer-garden.jpg",
+    "rainyDayAlternativeId": "russian-museum"
+  },
+  {
+    "id": "isaac-cathedral",
+    "name": { "ru": "Исаакиевский собор", "en": "St. Isaac's Cathedral" },
+    "description": {
+      "ru": "Величественный собор с панорамной колоннадой",
+      "en": "Majestic cathedral with panoramic colonnade"
+    },
+    "location": "Санкт-Петербург",
+    "category": "church",
+    "accessibilityScore": 2,
+    "stairsLevel": "many",
+    "isIndoor": true,
+    "estimatedDuration": 90,
+    "entranceFee": 350,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/isaac.jpg"
+  },
+  {
+    "id": "kronstadt",
+    "name": { "ru": "Кронштадт", "en": "Kronstadt" },
+    "description": {
+      "ru": "Город-крепость на острове с Морским собором",
+      "en": "Fortress city on an island with Naval Cathedral"
+    },
+    "location": "Кронштадт",
+    "category": "fortress",
+    "accessibilityScore": 3,
+    "stairsLevel": "few",
+    "isIndoor": false,
+    "estimatedDuration": 180,
+    "entranceFee": 0,
+    "openingHours": "круглосуточно",
+    "imageUrl": "/images/kronstadt.jpg",
+    "rainyDayAlternativeId": "naval-museum"
+  },
+  {
+    "id": "vyborg",
+    "name": { "ru": "Выборг", "en": "Vyborg" },
+    "description": {
+      "ru": "Средневековый город со шведским замком и европейской архитектурой",
+      "en": "Medieval town with Swedish castle and European architecture"
+    },
+    "location": "Выборг",
+    "category": "fortress",
+    "accessibilityScore": 2,
+    "stairsLevel": "many",
+    "isIndoor": false,
+    "estimatedDuration": 240,
+    "entranceFee": 350,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/vyborg.jpg",
+    "rainyDayAlternativeId": "hermitage"
+  },
+  {
+    "id": "shlisselburg",
+    "name": { "ru": "Крепость Орешек", "en": "Oreshek Fortress" },
+    "description": {
+      "ru": "Древняя крепость на острове у истока Невы",
+      "en": "Ancient fortress on an island at the source of the Neva"
+    },
+    "location": "Шлиссельбург",
+    "category": "fortress",
+    "accessibilityScore": 2,
+    "stairsLevel": "many",
+    "isIndoor": false,
+    "estimatedDuration": 150,
+    "entranceFee": 300,
+    "openingHours": "10:00-18:00",
+    "imageUrl": "/images/oreshek.jpg",
+    "rainyDayAlternativeId": "artillery-museum"
+  }
+]

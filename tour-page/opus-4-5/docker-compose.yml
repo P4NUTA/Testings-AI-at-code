@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  tour-planner-55:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tour-planner-55plus
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "app.name=tour-planner-55plus"
+      - "app.description=Tour Planner for 55+ travelers in Leningrad Oblast"

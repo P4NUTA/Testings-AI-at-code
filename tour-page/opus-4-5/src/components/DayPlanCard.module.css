@@ -1,0 +1,218 @@
+.dayCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.dayHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.daySummary {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.activities {
+  padding: var(--spacing-lg);
+}
+
+.activity {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.activity:last-child {
+  border-bottom: none;
+}
+
+.timeColumn {
+  flex-shrink: 0;
+  width: 60px;
+}
+
+.time {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.activityContent {
+  flex: 1;
+}
+
+.attractionName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.description {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.activityMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.metaItem {
+  background: var(--color-background);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+.transport {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background: #e6fffa;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.transportIcon {
+  font-size: 1.2rem;
+}
+
+.transportTime {
+  color: var(--color-text-muted);
+}
+
+.transportCost {
+  margin-left: auto;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.meals {
+  background: var(--color-background);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
+}
+
+.mealLabel {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  min-width: 60px;
+}
+
+.mealName {
+  flex: 1;
+  color: var(--color-text);
+}
+
+.mealCost {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.rainySection {
+  background: #ebf8ff;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--color-primary-light);
+}
+
+.rainyTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.rainyTitle::before {
+  content: '🌧️';
+}
+
+.rainyDescription {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.rainyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rainyItem {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.rainyItem::before {
+  content: '→ ';
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .dayHeader {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    text-align: center;
+  }
+
+  .activity {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .timeColumn {
+    width: auto;
+  }
+
+  .activityMeta {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .metaItem {
+    width: fit-content;
+  }
+
+  .transport {
+    flex-wrap: wrap;
+  }
+
+  .transportCost {
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+}

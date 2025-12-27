@@ -1,0 +1,152 @@
+[
+  {
+    "id": "teremok-nevsky",
+    "name": { "ru": "Теремок", "en": "Teremok" },
+    "description": {
+      "ru": "Сеть кафе с русскими блинами и домашней кухней",
+      "en": "Cafe chain with Russian blini and home-style cuisine"
+    },
+    "location": "Санкт-Петербург, Невский проспект",
+    "cuisine": { "ru": "Русская кухня", "en": "Russian cuisine" },
+    "priceRange": "budget",
+    "averageCost": 500,
+    "accessibilityScore": 5,
+    "hasElevator": false,
+    "quietSeating": true
+  },
+  {
+    "id": "marketplace-galeria",
+    "name": { "ru": "Marketplace", "en": "Marketplace" },
+    "description": {
+      "ru": "Фуд-холл с разнообразными кухнями мира",
+      "en": "Food hall with diverse world cuisines"
+    },
+    "location": "Санкт-Петербург, ТРЦ Галерея",
+    "cuisine": { "ru": "Разная кухня", "en": "Various cuisines" },
+    "priceRange": "moderate",
+    "averageCost": 800,
+    "accessibilityScore": 5,
+    "hasElevator": true,
+    "quietSeating": true
+  },
+  {
+    "id": "stolovaya-1",
+    "name": { "ru": "Столовая №1", "en": "Canteen No. 1" },
+    "description": {
+      "ru": "Советская столовая с доступными ценами",
+      "en": "Soviet-style canteen with affordable prices"
+    },
+    "location": "Санкт-Петербург",
+    "cuisine": { "ru": "Домашняя кухня", "en": "Home cooking" },
+    "priceRange": "budget",
+    "averageCost": 350,
+    "accessibilityScore": 4,
+    "hasElevator": false,
+    "quietSeating": true
+  },
+  {
+    "id": "cafe-singer",
+    "name": { "ru": "Кафе Зингеръ", "en": "Cafe Singer" },
+    "description": {
+      "ru": "Кафе с видом на Казанский собор в доме Зингера",
+      "en": "Cafe overlooking Kazan Cathedral in Singer House"
+    },
+    "location": "Санкт-Петербург, Невский проспект 28",
+    "cuisine": { "ru": "Европейская кухня", "en": "European cuisine" },
+    "priceRange": "expensive",
+    "averageCost": 1500,
+    "accessibilityScore": 3,
+    "hasElevator": true,
+    "quietSeating": true
+  },
+  {
+    "id": "palkin",
+    "name": { "ru": "Палкинъ", "en": "Palkin" },
+    "description": {
+      "ru": "Исторический ресторан русской кухни с 1785 года",
+      "en": "Historic Russian cuisine restaurant since 1785"
+    },
+    "location": "Санкт-Петербург, Невский проспект 47",
+    "cuisine": { "ru": "Русская кухня", "en": "Russian cuisine" },
+    "priceRange": "expensive",
+    "averageCost": 2000,
+    "accessibilityScore": 4,
+    "hasElevator": true,
+    "quietSeating": true
+  },
+  {
+    "id": "peterhof-cafe",
+    "name": { "ru": "Штандарт", "en": "Standart" },
+    "description": {
+      "ru": "Кафе в Петергофе с видом на парк",
+      "en": "Cafe in Peterhof with park view"
+    },
+    "location": "Петергоф",
+    "cuisine": { "ru": "Европейская кухня", "en": "European cuisine" },
+    "priceRange": "moderate",
+    "averageCost": 900,
+    "accessibilityScore": 4,
+    "hasElevator": false,
+    "quietSeating": true
+  },
+  {
+    "id": "pushkin-cafe",
+    "name": { "ru": "Кафе Пушкинъ", "en": "Cafe Pushkin" },
+    "description": {
+      "ru": "Уютное кафе в Царском Селе",
+      "en": "Cozy cafe in Tsarskoye Selo"
+    },
+    "location": "Пушкин",
+    "cuisine": { "ru": "Русская кухня", "en": "Russian cuisine" },
+    "priceRange": "moderate",
+    "averageCost": 750,
+    "accessibilityScore": 4,
+    "hasElevator": false,
+    "quietSeating": true
+  },
+  {
+    "id": "europa-restaurant",
+    "name": { "ru": "Европа", "en": "Europa" },
+    "description": {
+      "ru": "Ресторан в историческом отеле Европа",
+      "en": "Restaurant in the historic Hotel Europe"
+    },
+    "location": "Санкт-Петербург",
+    "cuisine": { "ru": "Европейская кухня", "en": "European cuisine" },
+    "priceRange": "expensive",
+    "averageCost": 2500,
+    "accessibilityScore": 5,
+    "hasElevator": true,
+    "quietSeating": true
+  },
+  {
+    "id": "bliny-domik",
+    "name": { "ru": "Блинный домик", "en": "Pancake House" },
+    "description": {
+      "ru": "Традиционные русские блины с разными начинками",
+      "en": "Traditional Russian pancakes with various fillings"
+    },
+    "location": "Санкт-Петербург",
+    "cuisine": { "ru": "Русская кухня", "en": "Russian cuisine" },
+    "priceRange": "budget",
+    "averageCost": 400,
+    "accessibilityScore": 4,
+    "hasElevator": false,
+    "quietSeating": true
+  },
+  {
+    "id": "gatchina-cafe",
+    "name": { "ru": "Приоратский", "en": "Prioratsky" },
+    "description": {
+      "ru": "Кафе рядом с Гатчинским дворцом",
+      "en": "Cafe near Gatchina Palace"
+    },
+    "location": "Гатчина",
+    "cuisine": { "ru": "Домашняя кухня", "en": "Home cooking" },
+    "priceRange": "budget",
+    "averageCost": 450,
+    "accessibilityScore": 4,
+    "hasElevator": false,
+    "quietSeating": true
+  }
+]

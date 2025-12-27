@@ -1,0 +1,95 @@
+{
+  "app": {
+    "title": "Tours 55+",
+    "subtitle": "Leningrad Oblast",
+    "tagline": "Comfortable itineraries for travelers over 55"
+  },
+  "form": {
+    "duration": "Duration",
+    "days": {
+      "1": "1 day",
+      "2": "2 days",
+      "3": "3 days"
+    },
+    "budget": "Budget",
+    "budgetLevels": {
+      "budget": "Budget",
+      "moderate": "Moderate",
+      "comfortable": "Comfortable"
+    },
+    "mobility": "Mobility",
+    "mobilityLevels": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "limited": "Limited"
+    },
+    "interests": "Interests",
+    "interestOptions": {
+      "museums": "Museums",
+      "palaces": "Palaces",
+      "parks": "Parks",
+      "history": "History",
+      "art": "Art",
+      "nature": "Nature"
+    },
+    "generate": "Generate Itinerary",
+    "generating": "Generating..."
+  },
+  "itinerary": {
+    "title": "Your Itinerary",
+    "day": "Day",
+    "totalBudget": "Total Budget",
+    "totalTime": "Total Travel Time",
+    "comfortScore": "Comfort Score",
+    "rubles": "₽",
+    "minutes": "min",
+    "hours": "h"
+  },
+  "dayPlan": {
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "travelTime": "Travel Time",
+    "entranceFee": "Entrance Fee",
+    "free": "Free",
+    "duration": "Duration",
+    "accessibility": "Accessibility",
+    "stairs": "Stairs",
+    "stairsLevels": {
+      "none": "None",
+      "few": "Few",
+      "moderate": "Moderate",
+      "many": "Many"
+    }
+  },
+  "rainy": {
+    "title": "Rainy Day Alternative",
+    "description": "If the weather turns bad, here are indoor options"
+  },
+  "transport": {
+    "bus": "Bus",
+    "train": "Train",
+    "metro": "Metro",
+    "taxi": "Taxi",
+    "walking": "Walking",
+    "transfers": "Transfers",
+    "none": "none"
+  },
+  "accessibility": {
+    "score": "Accessibility Score",
+    "excellent": "Excellent",
+    "good": "Good",
+    "moderate": "Moderate",
+    "limited": "Limited"
+  },
+  "errors": {
+    "invalidDuration": "Select a duration from 1 to 3 days",
+    "noAttractions": "Could not find suitable attractions",
+    "generationFailed": "Error generating itinerary"
+  },
+  "footer": {
+    "disclaimer": "Prices and schedules may vary. We recommend verifying information before your trip."
+  }
+}

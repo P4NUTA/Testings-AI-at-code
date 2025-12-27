@@ -1,0 +1,8 @@
+{
+  "name": "tour-planner-55-root",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "test": "cd server && npm test"
+  }
+}
